@@ -24,6 +24,12 @@ else
 fi
 }​​​​
 
+function dockcheck
+{
+yum list installed | grep docker
+
+}
+
 function chperm ()
 {​​​​
 chmod 744 /home/tbash.sh
