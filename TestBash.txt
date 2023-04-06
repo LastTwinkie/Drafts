@@ -28,11 +28,11 @@ function dockcheck
 {
 yum list installed | grep docker
 echo $?
-if [[echo $? == "127"]]
+if [[ {echo $?} == "127"]]
 
  then echo "Docker is already installed"
  
-if [[{echo $?} == '1']]
+if [[ {echo $?} == '1']]
 }
 
 function chperm ()
